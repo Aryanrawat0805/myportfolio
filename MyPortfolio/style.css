@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+nav h1 {
+  font-size: 28px;
+  color: #00ffff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.hero h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero h2 span {
+  color: #00ffff;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 14px 28px;
+  background-color: #00ffff;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 10px #00ffff80;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #00cccc;
+  box-shadow: 0 0 20px #00ffffa0;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.about-section {
+  padding: 80px 60px;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+.projects-section {
+  padding: 80px 60px;
+  background-color: #222;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #00ffff;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #2e2e2e;
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffff40;
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ffff80;
+}
+.skills-section {
+  padding: 80px 60px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #00ffff;
+}
+
+.skill-bars {
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill label {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.bar {
+  width: 100%;
+  background-color: #333;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 18px;
+  border-radius: 30px;
+  transition: width 1s ease-in-out;
+}
+.contact-section {
+  padding: 80px 60px;
+  background-color: #121212;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: #00ffff;
+  background-color: #1f1f1f;
+  border: 1px solid #00ffff99;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.contact-links a:hover {
+  background-color: #00ffff33;
+  box-shadow: 0 0 15px #00ffffaa;
+  transform: scale(1.05);
+}
